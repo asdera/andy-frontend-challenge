@@ -1,0 +1,24 @@
+Schedule:
+- Day 1: Set up graphql, read up antd, routing
+- Day 2: Sort and functionality, login, toggle private/public
+- Day 3: Filters, search, and url query
+- Day 4: Pretty up, front page and anchor links
+- Day 5: Write-up
+
+Login:
+- Display in App.ts
+- Use routes maybe?
+- Display Errors
+
+Add-ons:
+- Pagination (fetch and UI) with apollo/graphql and antd
+- Skeleton events
+- Antd customize (Hack the North brand colours)
+- Sort filters
+- Antd explore
+-
+- HAVE FUN
+
+
+Misc:
+- Andrew doggo
