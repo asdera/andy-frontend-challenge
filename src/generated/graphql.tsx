@@ -16434,9 +16434,9 @@ export type UserWhereUniqueInput = {
   sponsor_company_id?: InputMaybe<Scalars["Int"]>;
 };
 
-export type Unnamed_1_QueryVariables = Exact<{ [key: string]: never }>;
+export type EventListQueryVariables = Exact<{ [key: string]: never }>;
 
-export type Unnamed_1_Query = {
+export type EventListQuery = {
   __typename?: "Query";
   sampleEvents: Array<{
     __typename?: "TEvent";
@@ -16476,8 +16476,8 @@ export type EventProfileQuery = {
   };
 };
 
-export const Document = gql`
-  {
+export const EventListDocument = gql`
+  query EventList {
     sampleEvents {
       id
       name
@@ -16498,35 +16498,49 @@ export const Document = gql`
 `;
 
 /**
- * __useQuery__
+ * __useEventListQuery__
  *
- * To run a query within a React component, call `useQuery` and pass it any options that fit your needs.
- * When your component renders, `useQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * To run a query within a React component, call `useEventListQuery` and pass it any options that fit your needs.
+ * When your component renders, `useEventListQuery` returns an object from Apollo Client that contains loading, error, and data properties
  * you can use to render your UI.
  *
  * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
  *
  * @example
- * const { data, loading, error } = useQuery({
+ * const { data, loading, error } = useEventListQuery({
  *   variables: {
  *   },
  * });
  */
-export function useQuery(
-  baseOptions?: Apollo.QueryHookOptions<Query, QueryVariables>
+export function useEventListQuery(
+  baseOptions?: Apollo.QueryHookOptions<EventListQuery, EventListQueryVariables>
 ) {
   const options = { ...defaultOptions, ...baseOptions };
-  return Apollo.useQuery<Query, QueryVariables>(Document, options);
+  return Apollo.useQuery<EventListQuery, EventListQueryVariables>(
+    EventListDocument,
+    options
+  );
 }
-export function useLazyQuery(
-  baseOptions?: Apollo.LazyQueryHookOptions<Query, QueryVariables>
+export function useEventListLazyQuery(
+  baseOptions?: Apollo.LazyQueryHookOptions<
+    EventListQuery,
+    EventListQueryVariables
+  >
 ) {
   const options = { ...defaultOptions, ...baseOptions };
-  return Apollo.useLazyQuery<Query, QueryVariables>(Document, options);
+  return Apollo.useLazyQuery<EventListQuery, EventListQueryVariables>(
+    EventListDocument,
+    options
+  );
 }
-export type QueryHookResult = ReturnType<typeof useQuery>;
-export type LazyQueryHookResult = ReturnType<typeof useLazyQuery>;
-export type QueryResult = Apollo.QueryResult<Query, QueryVariables>;
+export type EventListQueryHookResult = ReturnType<typeof useEventListQuery>;
+export type EventListLazyQueryHookResult = ReturnType<
+  typeof useEventListLazyQuery
+>;
+export type EventListQueryResult = Apollo.QueryResult<
+  EventListQuery,
+  EventListQueryVariables
+>;
 export const EventProfileDocument = gql`
   query EventProfile($id: Float!) {
     sampleEvent(id: $id) {

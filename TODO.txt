@@ -1,14 +1,26 @@
 Schedule:
-- Day 1: Set up graphql, read up antd, routing
-- Day 2: Sort and functionality, login, toggle private/public
+- Day 1: Set up graphql, read up antd, routing, login
+- Day 2: Pagination, fetch more, sort and functionality, public + private perms, toggle private/public
 - Day 3: Filters, search, and url query
-- Day 4: Pretty up, front page and anchor links
-- Day 5: Write-up
+- Day 4: Collapsable event and all info
+- Day 5: Pretty up, front page and anchor links
+- Day 6: Write-up
+
+Homepage:
+- Speaker display: Carousel
+
+Events:
+- Loading spinner
+- Collapsable events
+- Tabs for speakers
+- Event info: description, empty popover
+- Timeline tab, unfinished calendar tab
 
 Login:
 - Display in App.ts
 - Use routes maybe?
-- Display Errors
+- Display errors
+- Popup messages
 
 Add-ons:
 - Pagination (fetch and UI) with apollo/graphql and antd
@@ -19,6 +31,10 @@ Add-ons:
 -
 - HAVE FUN
 
+Edge-cases:
+- Multiple speakers
+- Events spanning across midnight (use a warning and popup)
+-
 
 Misc:
 - Andrew doggo

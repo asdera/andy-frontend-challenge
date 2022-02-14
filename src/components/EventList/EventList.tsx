@@ -1,31 +1,33 @@
 import React, { FC } from "react";
-import { List, Skeleton } from "antd";
+import { Card, List, Skeleton } from "antd";
 import Avatar from "antd/lib/avatar/avatar";
 import Item from "antd/lib/list/Item";
 import PageLayout from "../PageLayout/PageLayout";
-import data from "./../../data.json";
 import styles from "./EventList.module.scss";
+import { EventListQuery } from "../../generated/graphql";
+import EventProfile from "../EventProfile/EventProfile";
 
-interface EventListProps {}
+interface EventListProps {
+  data: EventListQuery;
+}
 
-const EventList: FC<EventListProps> = () => (
+const EventList: FC<EventListProps> = ({ data }) => (
   <List
     className={styles.container}
-    itemLayout="horizontal"
-    dataSource={data}
+    // itemLayout="horizontal"
+    grid={{
+      gutter: 16,
+      xs: 1,
+      sm: 1,
+      md: 1,
+      lg: 2,
+      xl: 2,
+      xxl: 3,
+    }}
+    dataSource={data.sampleEvents}
     renderItem={(item) => (
-      <List.Item
-        actions={[
-          <a key="list-loadmore-edit">edit</a>,
-          <a key="list-loadmore-more">more</a>,
-        ]}
-      >
-        <List.Item.Meta
-          avatar={<Avatar src={(item.speakers[0] as any)?.profile_pic} />}
-          title={<a href="https://ant.design">{item.name}</a>}
-          description={item.description}
-        />
-        {/* {item.speakers.map()} */}
+      <List.Item className={styles.item}>
+        <EventProfile item={item} />
       </List.Item>
     )}
   />

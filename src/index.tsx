@@ -6,7 +6,7 @@ import "./index.css";
 import App from "./App";
 
 const client = new ApolloClient({
-  uri: "https://spacexdata.herokuapp.com/graphql",
+  uri: "https://api.hackthenorth.com/v3/graphql",
   cache: new InMemoryCache(),
 });
 
