@@ -1,20 +1,35 @@
+Plan of Attack:
+- audience are hackers, event attenders
+- appealing design to make events appealing
+- use the most scaling stack
+- components are to be reused, demo this flexibility
+- use good code design like hubspot
+- start early so you can add fun stuff
+
 Schedule:
 - Day 1: Set up graphql, read up antd, routing, login
 - Day 2: Pagination, fetch more, sort and functionality, public + private perms, toggle private/public
 - Day 3: Filters, search, and url query
 - Day 4: Collapsable event and all info
-- Day 5: Pretty up, front page and anchor links
+- Day 5: Pretty up clean up, front page and anchor links
 - Day 6: Write-up
 
 Homepage:
 - Speaker display: Carousel
+- Pagination for headline events
 
 Events:
 - Loading spinner
-- Collapsable events
+- Collapsable events, double for related
 - Tabs for speakers
 - Event info: description, empty popover
 - Timeline tab, unfinished calendar tab
+
+Filters:
+- public/private with login
+- event type
+- search for speaker and event name and description?
+- sort by date range omg
 
 Login:
 - Display in App.ts
@@ -28,13 +43,20 @@ Add-ons:
 - Antd customize (Hack the North brand colours)
 - Sort filters
 - Antd explore
--
+- Loading overlay animation
 - HAVE FUN
+
+Clean-up:
+- Use styled components
+- Sort components in sub folders
+- Find and remove in-line styling
+- Utils folder?
 
 Edge-cases:
 - Multiple speakers
 - Events spanning across midnight (use a warning and popup)
--
+- No related events
+- Api fetch not working
 
 Misc:
 - Andrew doggo

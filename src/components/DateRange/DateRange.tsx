@@ -23,7 +23,7 @@ interface DateRangeProps {
 
 const DateRange: FC<DateRangeProps> = ({ startDate, endDate }) => (
   <Divider style={{ margin: 0 }}>
-    <Space size={10}>
+    <Space size={0}>
       <Text type="success">
         {Intl.DateTimeFormat("en", simpleDateFormat).format(startDate)}
       </Text>

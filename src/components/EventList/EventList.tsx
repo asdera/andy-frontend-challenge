@@ -6,17 +6,19 @@ import PageLayout from "../PageLayout/PageLayout";
 import styles from "./EventList.module.scss";
 import { EventListQuery } from "../../generated/graphql";
 import EventProfile from "../EventProfile/EventProfile";
+import _ from "lodash";
 
 interface EventListProps {
   data: EventListQuery;
+  loading: boolean;
 }
 
-const EventList: FC<EventListProps> = ({ data }) => (
+const EventList: FC<EventListProps> = ({ data, loading }) => (
   <List
     className={styles.container}
     // itemLayout="horizontal"
     grid={{
-      gutter: 16,
+      gutter: 24,
       xs: 1,
       sm: 1,
       md: 1,
@@ -24,10 +26,16 @@ const EventList: FC<EventListProps> = ({ data }) => (
       xl: 2,
       xxl: 3,
     }}
-    dataSource={data.sampleEvents}
+    pagination={{
+      showSizeChanger: true,
+      defaultPageSize: 24,
+      pageSizeOptions: ["6", "12", "24"],
+      position: "bottom",
+    }}
+    dataSource={_.sortBy(data.sampleEvents, ["start_time", "end_time"])}
     renderItem={(item) => (
       <List.Item className={styles.item}>
-        <EventProfile item={item} />
+        <EventProfile item={item} loading={loading} />
       </List.Item>
     )}
   />
