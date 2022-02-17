@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/andy-frontend-challenge/static/css/main.ae9aad5c.css",
-    "main.js": "/andy-frontend-challenge/static/js/main.e137646f.js",
-    "static/css/492.188855c7.chunk.css": "/andy-frontend-challenge/static/css/492.188855c7.chunk.css",
-    "static/js/492.ead91da9.chunk.js": "/andy-frontend-challenge/static/js/492.ead91da9.chunk.js",
-    "static/css/346.6bd31c12.chunk.css": "/andy-frontend-challenge/static/css/346.6bd31c12.chunk.css",
-    "static/js/787.1f6739dd.chunk.js": "/andy-frontend-challenge/static/js/787.1f6739dd.chunk.js",
-    "static/js/341.5a0ef6b6.chunk.js": "/andy-frontend-challenge/static/js/341.5a0ef6b6.chunk.js",
-    "static/js/968.0c385529.chunk.js": "/andy-frontend-challenge/static/js/968.0c385529.chunk.js",
-    "static/media/confetti.png": "/andy-frontend-challenge/static/media/confetti.b75c062629665211f002.png",
-    "static/media/service.png": "/andy-frontend-challenge/static/media/service.3874481e4b1a4176cc8d.png",
-    "static/media/answer.png": "/andy-frontend-challenge/static/media/answer.c8ea3fa9ebbd449e35c3.png",
-    "static/media/defaultAvatar.jpeg": "/andy-frontend-challenge/static/media/defaultAvatar.d8e9eda7e205ef4caa57.jpeg",
-    "index.html": "/andy-frontend-challenge/index.html",
-    "main.ae9aad5c.css.map": "/andy-frontend-challenge/static/css/main.ae9aad5c.css.map",
-    "main.e137646f.js.map": "/andy-frontend-challenge/static/js/main.e137646f.js.map",
-    "492.188855c7.chunk.css.map": "/andy-frontend-challenge/static/css/492.188855c7.chunk.css.map",
-    "492.ead91da9.chunk.js.map": "/andy-frontend-challenge/static/js/492.ead91da9.chunk.js.map",
-    "346.6bd31c12.chunk.css.map": "/andy-frontend-challenge/static/css/346.6bd31c12.chunk.css.map",
-    "787.1f6739dd.chunk.js.map": "/andy-frontend-challenge/static/js/787.1f6739dd.chunk.js.map",
-    "341.5a0ef6b6.chunk.js.map": "/andy-frontend-challenge/static/js/341.5a0ef6b6.chunk.js.map",
-    "968.0c385529.chunk.js.map": "/andy-frontend-challenge/static/js/968.0c385529.chunk.js.map"
+    "main.css": "/static/css/main.ae9aad5c.css",
+    "main.js": "/static/js/main.405454e8.js",
+    "static/css/492.188855c7.chunk.css": "/static/css/492.188855c7.chunk.css",
+    "static/js/492.ead91da9.chunk.js": "/static/js/492.ead91da9.chunk.js",
+    "static/css/346.6bd31c12.chunk.css": "/static/css/346.6bd31c12.chunk.css",
+    "static/js/787.1f6739dd.chunk.js": "/static/js/787.1f6739dd.chunk.js",
+    "static/js/341.5a0ef6b6.chunk.js": "/static/js/341.5a0ef6b6.chunk.js",
+    "static/js/968.0c385529.chunk.js": "/static/js/968.0c385529.chunk.js",
+    "static/media/confetti.png": "/static/media/confetti.b75c062629665211f002.png",
+    "static/media/service.png": "/static/media/service.3874481e4b1a4176cc8d.png",
+    "static/media/answer.png": "/static/media/answer.c8ea3fa9ebbd449e35c3.png",
+    "static/media/defaultAvatar.jpeg": "/static/media/defaultAvatar.d8e9eda7e205ef4caa57.jpeg",
+    "index.html": "/index.html",
+    "main.ae9aad5c.css.map": "/static/css/main.ae9aad5c.css.map",
+    "main.405454e8.js.map": "/static/js/main.405454e8.js.map",
+    "492.188855c7.chunk.css.map": "/static/css/492.188855c7.chunk.css.map",
+    "492.ead91da9.chunk.js.map": "/static/js/492.ead91da9.chunk.js.map",
+    "346.6bd31c12.chunk.css.map": "/static/css/346.6bd31c12.chunk.css.map",
+    "787.1f6739dd.chunk.js.map": "/static/js/787.1f6739dd.chunk.js.map",
+    "341.5a0ef6b6.chunk.js.map": "/static/js/341.5a0ef6b6.chunk.js.map",
+    "968.0c385529.chunk.js.map": "/static/js/968.0c385529.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ae9aad5c.css",
-    "static/js/main.e137646f.js"
+    "static/js/main.405454e8.js"
   ]
 }
