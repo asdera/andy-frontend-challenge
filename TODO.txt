@@ -26,10 +26,11 @@ Events:
 - Timeline tab, unfinished calendar tab
 
 Filters:
-- public/private with login
-- event type
-- search for speaker and event name and description?
-- sort by date range omg
+- Skeleton filter
+- Public/private with login
+- Event type
+- Search for speaker and event name and description?
+- Sort by date range omg
 
 Login:
 - Display in App.ts
@@ -44,6 +45,7 @@ Add-ons:
 - Sort filters
 - Antd explore
 - Loading overlay animation
+- Clear filters button
 - HAVE FUN
 
 Clean-up:

@@ -1,18 +1,19 @@
-import React from "react";
-import { Grid } from "antd";
+import { Grid, Typography } from "antd";
 
 import styles from "./Loading.module.scss";
+import loadingIcon from "../../images/defaultAvatar.jpeg";
 
 function Loading() {
   const isMobile = Grid.useBreakpoint().xs;
   return (
     <div className={styles.loading}>
+      <br></br>
       <img
-        src="assets/logo.svg"
+        src={loadingIcon}
         width={isMobile ? 600 : 800}
-        alt="Hack Global Events"
+        alt="Hackathon Global Events"
       />
-      Loading...
+      <Typography.Title type="secondary">Loading...</Typography.Title>
     </div>
   );
 }

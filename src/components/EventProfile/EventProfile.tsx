@@ -32,9 +32,14 @@ const EventTypeToAvatar: { [name: string]: string } = {
 interface EventProfileProps {
   item: TEvent;
   loading: boolean;
+  nested?: boolean;
 }
 
-const EventProfile: FC<EventProfileProps> = ({ item, loading }) => {
+const EventProfile: FC<EventProfileProps> = ({
+  item,
+  loading,
+  nested = false,
+}) => {
   // const [overfillBorder, setOverfillBorder] = useState(false)
   const [visible, setVisible] = useState(false);
   const showSideView = () => {
@@ -121,11 +126,14 @@ const EventProfile: FC<EventProfileProps> = ({ item, loading }) => {
         {/* {item.speakers.map()} */}
       </Card>
       <Drawer
-        width={500}
-        title={item.name}
+        width={600}
+        title={<Text>{item.name}</Text>}
         placement="right"
         onClose={closeSideView}
         visible={visible}
+        maskStyle={
+          nested ? { opacity: 0, transition: "none", background: "none" } : {}
+        }
       >
         <EventView item={item}></EventView>
       </Drawer>

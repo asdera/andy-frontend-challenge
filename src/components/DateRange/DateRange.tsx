@@ -22,17 +22,15 @@ interface DateRangeProps {
 }
 
 const DateRange: FC<DateRangeProps> = ({ startDate, endDate }) => (
-  <Divider style={{ margin: 0 }}>
-    <Space size={0}>
-      <Text type="success">
-        {Intl.DateTimeFormat("en", simpleDateFormat).format(startDate)}
-      </Text>
-      <Divider type="vertical" />
-      <Text type="secondary">{`${Intl.DateTimeFormat("en", timeFormat).format(
-        startDate
-      )} - ${Intl.DateTimeFormat("en", timeFormat).format(endDate)}`}</Text>
-    </Space>
-  </Divider>
+  <Space size={0}>
+    <Text type="success">
+      {Intl.DateTimeFormat("en", simpleDateFormat).format(startDate)}
+    </Text>
+    <Divider type="vertical" />
+    <Text type="secondary">{`${Intl.DateTimeFormat("en", timeFormat).format(
+      startDate
+    )} - ${Intl.DateTimeFormat("en", timeFormat).format(endDate)}`}</Text>
+  </Space>
 );
 
 export default DateRange;

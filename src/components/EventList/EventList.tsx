@@ -4,12 +4,12 @@ import Avatar from "antd/lib/avatar/avatar";
 import Item from "antd/lib/list/Item";
 import PageLayout from "../PageLayout/PageLayout";
 import styles from "./EventList.module.scss";
-import { EventListQuery } from "../../generated/graphql";
+import { EventListQuery, TEvent } from "../../generated/graphql";
 import EventProfile from "../EventProfile/EventProfile";
 import _ from "lodash";
 
 interface EventListProps {
-  data: EventListQuery;
+  data: TEvent[];
   loading: boolean;
 }
 
@@ -32,7 +32,7 @@ const EventList: FC<EventListProps> = ({ data, loading }) => (
       pageSizeOptions: ["6", "12", "24"],
       position: "bottom",
     }}
-    dataSource={_.sortBy(data.sampleEvents, ["start_time", "end_time"])}
+    dataSource={data}
     renderItem={(item) => (
       <List.Item className={styles.item}>
         <EventProfile item={item} loading={loading} />

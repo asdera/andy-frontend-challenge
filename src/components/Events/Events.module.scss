@@ -1,2 +1,24 @@
-.Events {
+.loginButton {
+  margin-bottom: 36px;
+  // background-color: #d8a9a9;
+}
+
+.title {
+  position: relative;
+}
+
+.titleIcon1 {
+  position: absolute;
+  transform: rotate(-20deg);
+  left: 12px;
+  bottom: -60px;
+  opacity: 10%;
+}
+
+.titleIcon2 {
+  position: absolute;
+  transform: rotate(20deg);
+  right: 12px;
+  bottom: -60px;
+  opacity: 10%;
 }
