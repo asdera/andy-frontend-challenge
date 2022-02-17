@@ -46,6 +46,9 @@ Add-ons:
 - Antd explore
 - Loading overlay animation
 - Clear filters button
+- Need to clean the code more
+- EventContainer too long
+- EventProfile too long
 - HAVE FUN
 
 Clean-up:
