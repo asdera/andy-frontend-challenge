@@ -1,4 +1,4 @@
-# Getting Started
+# Project Writeup
 
 # 1. The approach
 The first few days, I brainstormed many criteria on how to start out and read over the project guidelines. I wanted my big focus to be scalability and accessibility. 
