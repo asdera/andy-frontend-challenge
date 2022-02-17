@@ -1,10 +1,4 @@
-import {
-  Checkbox,
-  DatePicker,
-  Descriptions,
-  Input,
-  Select,
-} from "antd";
+import { Checkbox, DatePicker, Descriptions, Input, Select } from "antd";
 import { FC } from "react";
 import styles from "./Filters.module.scss";
 const { Option } = Select;

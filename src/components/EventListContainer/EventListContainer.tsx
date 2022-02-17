@@ -1,7 +1,7 @@
 import React, { useState, useEffect, FC } from "react";
 import {
   useEventListQuery as getEventListQuery,
-  TEvent
+  TEvent,
 } from "../../generated/graphql";
 import EventList from "../EventList/EventList";
 import Filters from "../Filters/Filters";
@@ -45,7 +45,11 @@ const EventListContainer: FC<EventListContainerProps> = ({ token }) => {
       filtersFromParams.toggleFilters &&
       JSON.parse(filtersFromParams.toggleFilters as string).length
     ) {
-      setToggleFilters(JSON.parse(filtersFromParams.toggleFilters as string));
+      setToggleFilters(
+        JSON.parse(filtersFromParams.toggleFilters as string).filter(
+          (x: string) => x !== "private"
+        )
+      );
     }
   }, []);
 

@@ -1,4 +1,3 @@
-
 import { FC } from "react";
 import Events from "../Events/Events";
 import styles from "./Homepage.module.scss";
