@@ -40,7 +40,6 @@
     "codegen": "graphql-codegen --config codegen.yml",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
-}
   },
   "eslintConfig": {
     "extends": [
