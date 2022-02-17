@@ -1,6 +1,4 @@
 {
-  "homepage": "http://asdera.github.io/andy-frontend-challenge",
-  "proxy": "http://localhost:5000",
   "name": "andy-frontend-challenge",
   "version": "0.1.0",
   "private": true,
